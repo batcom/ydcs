@@ -21,6 +21,7 @@ var FindProxyForURL = function (init, profiles) {
     "+ydcs": function (url, host, scheme) {
         "use strict";
         if (/^127\.0\.0\.1$/.test(host) || /^::1$/.test(host) || /^localhost$/.test(host)) return "DIRECT";
+        if (url.indexOf('t5game_res/cfg/cfg_')!==-1) return "DIRECT";
         return "PROXY 118.126.112.177:8899";
     }
 });
