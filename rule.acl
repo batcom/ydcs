@@ -1,3 +1,11 @@
-api.t5game.5jli.com remoteproxy
-error.t5game.5jli.com remoteproxy
-res.t5game.5jli.com remoteproxy
+[bypass_all]
+### 默认直连 自己可以自定义
+### [outbound_block_list] 禁止访问列表
+### [bypass_list] 直连列表 禁止访问列表
+### [proxy_list] 代理列表
+
+#**********************************************************************
+[proxy_list]
+api.t5game.5jli.com$
+error.t5game.5jli.com$
+res.t5game.5jli.com$
